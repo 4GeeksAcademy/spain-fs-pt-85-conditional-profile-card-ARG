@@ -40,8 +40,8 @@ function render(variables = {}) {
   }
   if (variables.github == null) {
     variables.github = "https://github.com/4geeksacademy";
-  } else if (variables.twitter.slice(0, 8) != "https://") {
-    variables.twitter = "https://" + variables.github;
+  } else if (variables.github.slice(0, 8) != "https://") {
+    variables.github = "https://" + variables.github;
   }
   if (variables.linkedin == null) {
     variables.linkedin = "https://linkedin.com/school/4geeksacademy";
@@ -66,7 +66,7 @@ function render(variables = {}) {
           <ul class="${variables.socialMediaPosition}">
             <li><a href=${variables.twitter}><i class="fab fa-twitter"></i></a></li>
             <li><a href=${variables.github}><i class="fab fa-github"></i></a></li>
-            <li><a href=${variables.instagram}><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=${variables.linkedin}><i class="fab fa-linkedin"></i></a></li>
             <li><a href=${variables.instagram}><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
